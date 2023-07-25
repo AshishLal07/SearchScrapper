@@ -7,7 +7,7 @@ const Result = () => {
 
 	useEffect(() => {
 		if (searchTerms) {
-			// getResult(searchTerms);
+			getResult(searchTerms);
 		}
 	}, [searchTerms]);
 
