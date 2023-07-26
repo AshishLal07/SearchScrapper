@@ -11,11 +11,10 @@ export const ResultContextProvider = ({children}) => {
 
 	const getResult = async (type) => {
 		setIsLoading(true);
-		console.log(`${type}`);
+
 		const response = await axios.get(baseUrl, {
 			params: {
-				api_key:
-					'C8LNTQHMXFHAEHHB2E0E7IG17FZB608RIPK0NQYNR5P4HBQ39250ZJTOS6FNLY33NH2ZJFK79FQVWYA8',
+				api_key: import.meta.env.VITE_API_KEY,
 				search: `${type}`,
 				nb_results: 20,
 			},

@@ -39,6 +39,8 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+        env:
+          VITE_API_KEY: 'C8LNTQHMXFHAEHHB2E0E7IG17FZB608RIPK0NQYNR5P4HBQ39250ZJTOS6FNLY33NH2ZJFK79FQVWYA8'
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
